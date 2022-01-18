@@ -5,7 +5,6 @@ const Counter = () => {
 
     const [myDate, setMyDate] = useState(new Date("Jan 16, 2022 23:00:00"))
 
-    let startingpoint = new Date("Jan 16, 2022 23:00:00")
     let now = new Date().getTime();
     let distance = myDate - now;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -16,7 +15,7 @@ const Counter = () => {
     const [myTime, setMyTime] = useState(new Date());
     
     if (distance < 0) {
-        let date = startingpoint.setDate(startingpoint.getDate() + 7)
+        let date = myDate.setDate(myDate.getDate() + 7)
         setMyDate(new Date(date))
     }
 
@@ -39,7 +38,7 @@ const Counter = () => {
                 + minutes + "m " + seconds + "s "
             }
         </p>
-        <h5 style={{"font-size": 30, "font-family": "'Helvetica Ultra Light'", color: "grey"}}>Horário atual: {
+        <h5 style={{fontSize: 30, fontFamily: "'Helvetica Ultra Light'", color: "grey"}}>Horário atual: {
                 `${myTime.toLocaleTimeString()}, ${myTime.toLocaleDateString()}`
             }</h5>
         </div>
