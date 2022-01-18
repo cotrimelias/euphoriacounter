@@ -3,7 +3,7 @@ import styles from './counter.module.css'
 
 const Counter = () => {
 
-    let countDownDate = new Date("Jan 16, 2022 23:00:00").getTime();
+    let countDownDate = new Date("Jan 23, 2022 23:00:00").getTime();
     let now = new Date().getTime();
     let distance = countDownDate - now;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
