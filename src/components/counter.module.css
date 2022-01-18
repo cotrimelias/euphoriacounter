@@ -7,3 +7,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.clock {
+    font-size: 30px;
+    font-family: "Helvetica Ultra Light";
+    color: grey;
+}
