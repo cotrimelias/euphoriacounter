@@ -40,7 +40,7 @@ const Counter = () => {
             }
         </p>
         <h5 style={{"font-size": 30, "font-family": "'Helvetica Ultra Light'", color: "grey"}}>Horário atual: {
-                `${myTime.toLocaleTimeString()}`
+                `${myTime.toLocaleTimeString()}, ${myTime.toLocaleDateString()}`
             }</h5>
         </div>
     )
